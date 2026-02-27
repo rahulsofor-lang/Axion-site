@@ -350,7 +350,7 @@ export default function App() {
               </div>
               <p className="text-gray-600 mb-8 text-sm">Para empresas que desejam acompanhamento completo e estratégico, com presença técnica em momentos-chave da organização.</p>
               <ul className="space-y-4 mb-8">
-                {['Diagnóstico técnico ampliado', 'Entrevistas e reuniões presenciais', 'Estruturação personalizada do PGR', 'Treinamento de lideranças', 'Assessoria técnica em auditorias'].map((item) => (
+                {['Diagnóstico técnico ampliado', 'Entrevistas e reuniões presenciais', 'Estruturação personalizada do PGR', 'Treinamento de lideranças'].map((item) => (
                   <li key={item} className="flex items-center gap-3 text-sm text-gray-700">
                     <CheckCircle2 size={18} className="text-green-500 shrink-0" />
                     {item}
