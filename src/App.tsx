@@ -93,6 +93,7 @@ export default function App() {
     { name: 'NR 1', href: '#nr1' },
     { name: 'Como Atuamos', href: '#atuacao' },
     { name: 'Modelos', href: '#modelos' },
+    { name: 'Plataformas', href: '#plataformas' },
     { name: 'Sobre', href: '#sobre' },
     { name: 'FAQ', href: '#faq' },
     { name: 'Contato', href: '#contato' },
@@ -119,10 +120,10 @@ export default function App() {
               </a>
             ))}
             <div className="flex items-center gap-4 ml-4">
-              <a href="#contato" className="bg-axion-orange hover:bg-axion-orange-hover text-white px-5 py-2.5 rounded-full font-bold text-sm transition-all shadow-lg shadow-axion-orange/20">
+              <a href="https://wa.me/5516993948884?text=Gostaria%20de%20solicitar%20uma%20proposta" target="_blank" rel="noopener noreferrer" className="bg-axion-orange hover:bg-axion-orange-hover text-white px-5 py-2.5 rounded-full font-bold text-sm transition-all shadow-lg shadow-axion-orange/20">
                 Solicitar Proposta
               </a>
-              <a href="https://wa.me/5516993948884" target="_blank" className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-full font-bold text-sm transition-all shadow-lg shadow-blue-600/20">
+              <a href="https://wa.me/5516993948884?text=gostaria%20de%20agendar%20uma%20Reunião" target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-full font-bold text-sm transition-all shadow-lg shadow-blue-600/20">
                 Agendar Reunião
               </a>
             </div>
@@ -155,10 +156,10 @@ export default function App() {
                   </a>
                 ))}
                 <div className="flex flex-col gap-4 pt-4 border-t border-white/10">
-                  <a href="#contato" onClick={() => setIsMenuOpen(false)} className="bg-axion-orange text-white text-center py-4 rounded-xl font-bold">
+                  <a href="https://wa.me/5516993948884?text=Gostaria%20de%20solicitar%20uma%20proposta" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)} className="bg-axion-orange text-white text-center py-4 rounded-xl font-bold">
                     Solicitar Proposta
                   </a>
-                  <a href="https://wa.me/5516993948884" onClick={() => setIsMenuOpen(false)} className="bg-blue-600 text-white text-center py-4 rounded-xl font-bold">
+                  <a href="https://wa.me/5516993948884?text=gostaria%20de%20agendar%20uma%20Reunião" target="_blank" rel="noopener noreferrer" onClick={() => setIsMenuOpen(false)} className="bg-blue-600 text-white text-center py-4 rounded-xl font-bold">
                     Agendar Reunião
                   </a>
                 </div>
@@ -202,7 +203,7 @@ export default function App() {
                 Não se trata apenas de cumprir uma norma. Proteja-se contra:
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {['Multas e autuações', 'Ações trabalhistas', 'Passivos previdenciários', 'Danos à reputação'].map((item) => (
+                {['Multas e autuações', 'Ações trabalhistas', 'Passivos previdenciários', 'Governança corporativa'].map((item) => (
                   <div key={item} className="flex items-center gap-2 text-gray-300 text-sm">
                     <CheckCircle2 size={16} className="text-axion-orange" />
                     {item}
@@ -212,10 +213,10 @@ export default function App() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#contato" className="bg-axion-orange hover:bg-axion-orange-hover text-white px-8 py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2 shadow-xl shadow-axion-orange/20">
+              <a href="https://wa.me/5516993948884?text=Gostaria%20de%20solicitar%20uma%20proposta" target="_blank" rel="noopener noreferrer" className="bg-axion-orange hover:bg-axion-orange-hover text-white px-8 py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2 shadow-xl shadow-axion-orange/20">
                 Solicitar Diagnóstico Técnico <ArrowRight size={20} />
               </a>
-              <a href="https://wa.me/5516993948884" className="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2">
+              <a href="https://wa.me/5516993948884?text=gostaria%20de%20agendar%20uma%20Reunião" target="_blank" rel="noopener noreferrer" className="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2">
                 Falar com Especialista
               </a>
             </div>
@@ -362,6 +363,61 @@ export default function App() {
         </div>
       </section>
 
+      {/* Plataformas de Avaliação */}
+      <section id="plataformas" className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl border border-gray-100 p-8 md:p-12 text-center relative overflow-hidden">
+            <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-axion-blue via-axion-orange to-axion-blue" />
+            
+            <SectionTitle subtitle="Acesse nossas ferramentas exclusivas de diagnóstico e acompanhamento técnico para sua empresa.">
+              Plataformas de Avaliação
+            </SectionTitle>
+
+            <div className="grid md:grid-cols-2 gap-6 mt-8">
+              <motion.a 
+                href="https://www.axiongerenciamentoderiscos.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="flex flex-col items-center gap-4 p-8 rounded-2xl bg-axion-blue text-white hover:bg-axion-blue-light transition-all shadow-lg group"
+              >
+                <div className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-axion-orange transition-colors">
+                  <BarChart3 size={32} />
+                </div>
+                <div className="text-center">
+                  <h4 className="text-xl font-bold font-display mb-2">Avaliação AXION 1</h4>
+                  <p className="text-gray-400 text-sm">Plataforma principal de gerenciamento de riscos</p>
+                </div>
+                <div className="mt-4 flex items-center gap-2 text-axion-orange font-bold text-sm uppercase tracking-widest">
+                  Acessar Agora <ArrowRight size={16} />
+                </div>
+              </motion.a>
+
+              <motion.a 
+                href="https://axion90app.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="flex flex-col items-center gap-4 p-8 rounded-2xl bg-white border-2 border-axion-blue text-axion-blue hover:border-axion-orange transition-all shadow-lg group"
+              >
+                <div className="w-16 h-16 rounded-full bg-axion-blue/5 flex items-center justify-center group-hover:bg-axion-orange group-hover:text-white transition-colors">
+                  <Zap size={32} />
+                </div>
+                <div className="text-center">
+                  <h4 className="text-xl font-bold font-display mb-2">Avaliação Axion 2</h4>
+                  <p className="text-gray-500 text-sm">Sistema complementar de diagnóstico rápido</p>
+                </div>
+                <div className="mt-4 flex items-center gap-2 text-axion-blue font-bold text-sm uppercase tracking-widest group-hover:text-axion-orange">
+                  Acessar Agora <ArrowRight size={16} />
+                </div>
+              </motion.a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Diferenciais */}
       <section className="py-24 bg-axion-blue text-white overflow-hidden relative">
         <div className="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
@@ -433,7 +489,9 @@ export default function App() {
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>A Axion Gestão de Riscos nasceu com um propósito claro: transformar a adequação normativa em estratégia empresarial.</p>
               <p>Atuamos com visão preventiva, técnica e estruturada, alinhando conformidade legal, proteção jurídica e eficiência organizacional.</p>
-              <p className="font-bold text-axion-blue">Acreditamos que prevenção não é custo — é posicionamento estratégico.</p>
+              <p>Nesse contexto, damos especial atenção às diretrizes da NR-1 voltadas para a gestão dos riscos psicossociais, que impactam diretamente a saúde mental, o bem-estar e a produtividade dos colaboradores. A NR-1 é obrigatória para todas as empresas que possuam empregados regidos pela Consolidação das Leis do Trabalho (CLT) e estabelece a base para a identificação, avaliação e tratamento desses riscos no ambiente de trabalho.</p>
+              <p>Mais do que atender uma exigência legal, enxergamos a gestão dos riscos psicossociais como uma oportunidade estratégica: reduzir adoecimentos, mitigar passivos trabalhistas, fortalecer a cultura interna e tornar o ambiente de trabalho mais saudável e sustentável.</p>
+              <p className="font-bold text-axion-blue">Acreditamos que prevenção não é custo — é posicionamento estratégico. E a correta aplicação da NR-1, incluindo a abordagem dos riscos psicossociais, é um dos pilares dessa visão.</p>
             </div>
             
             <div className="mt-12 p-8 bg-axion-blue rounded-3xl text-white relative overflow-hidden">
@@ -441,11 +499,14 @@ export default function App() {
               <h3 id="nr1" className="text-2xl font-bold mb-4 font-display">NR-1 Explicada</h3>
               <p className="text-gray-300 text-sm mb-6">A NR-1 estabelece as diretrizes gerais de segurança e saúde no trabalho. Com as atualizações recentes, tornou-se <strong>obrigatória</strong> a inclusão dos riscos psicossociais no PGR.</p>
               <h4 className="font-bold mb-3 text-axion-orange uppercase text-xs tracking-widest">Exemplos de Fatores:</h4>
-              <ul className="grid grid-cols-2 gap-2 text-xs text-gray-300">
-                <li className="flex items-center gap-2"><ArrowRight size={12} className="text-axion-orange" /> Excesso de demanda</li>
-                <li className="flex items-center gap-2"><ArrowRight size={12} className="text-axion-orange" /> Conflitos organizacionais</li>
-                <li className="flex items-center gap-2"><ArrowRight size={12} className="text-axion-orange" /> Pressão constante</li>
-                <li className="flex items-center gap-2"><ArrowRight size={12} className="text-axion-orange" /> Ambiente inseguro</li>
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-xs text-gray-300">
+                <li className="flex items-center gap-2"><ArrowRight size={12} className="text-axion-orange" /> Assédio Moral</li>
+                <li className="flex items-center gap-2"><ArrowRight size={12} className="text-axion-orange" /> Conflitos Interpessoais</li>
+                <li className="flex items-center gap-2"><ArrowRight size={12} className="text-axion-orange" /> Sobrecarga de trabalho</li>
+                <li className="flex items-center gap-2"><ArrowRight size={12} className="text-axion-orange" /> Metas abusivas</li>
+                <li className="flex items-center gap-2"><ArrowRight size={12} className="text-axion-orange" /> Pressão excessiva</li>
+                <li className="flex items-center gap-2"><ArrowRight size={12} className="text-axion-orange" /> Falta de apoio da liderança</li>
+                <li className="flex items-center gap-2"><ArrowRight size={12} className="text-axion-orange" /> Clima organizacional</li>
               </ul>
             </div>
           </div>
@@ -456,7 +517,7 @@ export default function App() {
               {[
                 { q: "Minha empresa é pequena. Preciso me adequar?", a: "Sim, a NR-1 se aplica a todos os portes de empresa, com proporcionalidade técnica." },
                 { q: "O serviço pode ser totalmente online?", a: "Sim, temos modelos 100% gravados e modelos híbridos que funcionam perfeitamente à distância." },
-                { q: "Vocês auxiliam em caso de fiscalização?", a: "Sim, oferecemos suporte técnico especializado conforme o plano contratado." },
+                { q: "É obrigado a ter a NR1 em qualquer porte de empresa?", a: "A observância da NR-1 é exigida de toda empresa que possua trabalhadores contratados conforme a Consolidação das Leis do Trabalho (CLT)." },
                 { q: "O relatório tem validade jurídica?", a: "Nossos relatórios são estruturados conforme a NR-1 e integrados ao PGR, oferecendo robusto respaldo documental." }
               ].map((item, idx) => (
                 <details key={idx} className="group bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden">
@@ -488,10 +549,10 @@ export default function App() {
             Adequar-se à NR-1 com estrutura técnica não é apenas cumprir uma obrigação — é proteger pessoas, resultados e reputação. A decisão é de gestão.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <a href="#contato" className="bg-axion-orange hover:bg-axion-orange-hover text-white px-10 py-5 rounded-2xl font-bold text-xl transition-all shadow-2xl shadow-axion-orange/30">
+            <a href="https://wa.me/5516993948884?text=Gostaria%20de%20solicitar%20uma%20proposta" target="_blank" rel="noopener noreferrer" className="bg-axion-orange hover:bg-axion-orange-hover text-white px-10 py-5 rounded-2xl font-bold text-xl transition-all shadow-2xl shadow-axion-orange/30">
               Solicitar Proposta
             </a>
-            <a href="https://wa.me/5516993948884" className="bg-white text-axion-blue hover:bg-gray-100 px-10 py-5 rounded-2xl font-bold text-xl transition-all shadow-2xl shadow-white/10">
+            <a href="https://wa.me/5516993948884?text=gostaria%20de%20agendar%20uma%20Reunião" target="_blank" rel="noopener noreferrer" className="bg-white text-axion-blue hover:bg-gray-100 px-10 py-5 rounded-2xl font-bold text-xl transition-all shadow-2xl shadow-white/10">
               Agendar Reunião Estratégica
             </a>
           </div>
@@ -501,9 +562,9 @@ export default function App() {
       {/* Contato e Rodapé */}
       <footer id="contato" className="bg-gray-900 text-white pt-24 pb-12">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-4 gap-12 mb-16">
+          <div className="grid lg:grid-cols-3 gap-12 mb-16">
             <div className="lg:col-span-1">
-              <img src={LOGO_URL} alt="Axion Logo" className="h-16 mb-6 brightness-0 invert" referrerPolicy="no-referrer" />
+              <img src={LOGO_URL} alt="Axion Logo" className="h-16 mb-6 object-contain" referrerPolicy="no-referrer" />
               <p className="text-gray-400 text-sm leading-relaxed mb-6">
                 Consultoria em riscos psicossociais e adequação à NR-1. Profissionais formados em Psicologia, atuando com seriedade e foco em proteção jurídica.
               </p>
@@ -539,21 +600,6 @@ export default function App() {
                   <span>Rua 7 de setembro, 2775, Centro, São Carlos-SP. Sala 05</span>
                 </li>
               </ul>
-            </div>
-
-            <div>
-              <h4 className="text-lg font-bold mb-6 font-display">Newsletter</h4>
-              <p className="text-gray-400 text-sm mb-4">Receba atualizações sobre a NR-1 e gestão de riscos.</p>
-              <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
-                <input 
-                  type="email" 
-                  placeholder="Seu e-mail" 
-                  className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm flex-1 focus:outline-none focus:border-axion-orange"
-                />
-                <button className="bg-axion-orange p-3 rounded-xl hover:bg-axion-orange-hover transition-colors">
-                  <ChevronRight size={20} />
-                </button>
-              </form>
             </div>
           </div>
 
