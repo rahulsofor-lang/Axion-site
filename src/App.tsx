@@ -203,7 +203,7 @@ export default function App() {
                 Não se trata apenas de cumprir uma norma. Proteja-se contra:
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {['Multas e autuações', 'Ações trabalhistas', 'Passivos previdenciários', 'Governança corporativa'].map((item) => (
+                {['Multas e autuações', 'Ações trabalhistas', 'Passivos previdenciários', 'Danos à reputação e riscos à governança corporativa'].map((item) => (
                   <div key={item} className="flex items-center gap-2 text-gray-300 text-sm">
                     <CheckCircle2 size={16} className="text-axion-orange" />
                     {item}
@@ -284,7 +284,9 @@ export default function App() {
               items={[
                 "Monitoramento periódico dos fatores de risco",
                 "Atualizações estratégicas conforme mudanças",
-                "Suporte técnico em auditorias e fiscalizações"
+                "Indicadores organizacionais",
+                "Revisão de medidas de controles",
+                "Atualização do Diagnóstico de riscos psicossociais"
               ]}
             />
           </div>
