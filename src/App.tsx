@@ -19,7 +19,8 @@ import {
   Stethoscope,
   Briefcase,
   AlertTriangle,
-  Zap
+  Zap,
+  GraduationCap
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -368,14 +369,14 @@ export default function App() {
       {/* Plataformas de Avaliação */}
       <section id="plataformas" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl border border-gray-100 p-8 md:p-12 text-center relative overflow-hidden">
+          <div className="max-w-6xl mx-auto bg-white rounded-3xl shadow-xl border border-gray-100 p-8 md:p-12 text-center relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-axion-blue via-axion-orange to-axion-blue" />
             
-            <SectionTitle subtitle="Acesse nossas ferramentas exclusivas de diagnóstico e acompanhamento técnico para sua empresa.">
-              Plataformas de Avaliação
+            <SectionTitle subtitle="Acesse nossas ferramentas exclusivas de diagnóstico, acompanhamento técnico e capacitação para sua empresa.">
+              Plataformas de Avaliação e Ensino
             </SectionTitle>
 
-            <div className="grid md:grid-cols-2 gap-6 mt-8">
+            <div className="grid md:grid-cols-3 gap-6 mt-8">
               <motion.a 
                 href="https://www.axiongerenciamentoderiscos.com/" 
                 target="_blank" 
@@ -412,6 +413,26 @@ export default function App() {
                   <p className="text-gray-500 text-sm">Sistema complementar de diagnóstico rápido</p>
                 </div>
                 <div className="mt-4 flex items-center gap-2 text-axion-blue font-bold text-sm uppercase tracking-widest group-hover:text-axion-orange">
+                  Acessar Agora <ArrowRight size={16} />
+                </div>
+              </motion.a>
+
+              <motion.a 
+                href="https://axion-cursos.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="flex flex-col items-center gap-4 p-8 rounded-2xl bg-axion-orange text-white hover:bg-axion-orange-hover transition-all shadow-lg group"
+              >
+                <div className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white group-hover:text-axion-orange transition-colors">
+                  <GraduationCap size={32} />
+                </div>
+                <div className="text-center">
+                  <h4 className="text-xl font-bold font-display mb-2">Axion Cursos</h4>
+                  <p className="text-white/80 text-sm">Plataforma de capacitação e treinamentos</p>
+                </div>
+                <div className="mt-4 flex items-center gap-2 text-white font-bold text-sm uppercase tracking-widest">
                   Acessar Agora <ArrowRight size={16} />
                 </div>
               </motion.a>
