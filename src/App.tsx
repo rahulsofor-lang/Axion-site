@@ -612,7 +612,12 @@ export default function App() {
               <ul className="space-y-4 text-gray-400 text-sm">
                 <li className="flex items-start gap-3">
                   <Mail size={18} className="text-axion-orange shrink-0" />
-                  <a href="mailto:contatoaxiongestaoderiscos@gmail.com" className="hover:text-white transition-colors">contatoaxiongestaoderiscos@gmail.com</a>
+                  <div className="flex flex-col gap-2">
+                    <a href="mailto:danitrebbi@axionassessoria.com" className="hover:text-white transition-colors">danitrebbi@axionassessoria.com</a>
+                    <a href="mailto:amanaue.cantu@axionassessoria.com" className="hover:text-white transition-colors">amanaue.cantu@axionassessoria.com</a>
+                    <a href="mailto:rahul@axionassessoria.com" className="hover:text-white transition-colors">rahul@axionassessoria.com</a>
+                    <a href="mailto:contato@axionassessoria.com" className="hover:text-white transition-colors font-bold">contato@axionassessoria.com</a>
+                  </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <Phone size={18} className="text-axion-orange shrink-0" />
